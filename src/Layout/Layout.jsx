@@ -11,7 +11,6 @@ const Layout = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const userId = useSelector((state)=> state.global.userId)
   const {data} = useGetUserQuery(userId)
-  console.log("data", data)
 
 
   return (
@@ -19,7 +18,7 @@ const Layout = () => {
       <Sidebar
         user={data || {}}
         isNonMobile={isNonMobile}
-        drawerWidth="300px"
+        drawerWidth="250px"
         isSidebarOpen={isSidebarOpen}
         setIsSidebarOpen={setIsSidebarOpen}
       />

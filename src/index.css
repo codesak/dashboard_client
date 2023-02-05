@@ -27,3 +27,8 @@ body,
 ::-webkit-scrollbar-track:hover {
   background: #21295c;
 }
+
+.css-zk1xl1-MuiButtonBase-root-MuiListItemButton-root{
+  padding-top: "3px"!important;
+  padding-bottom: "3px"!important;
+}

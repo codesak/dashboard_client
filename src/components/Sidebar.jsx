@@ -113,7 +113,7 @@ const Sidebar = ({ user, drawerWidth, isSidebarOpen, setIsSidebarOpen, isNonMobi
               {navItems.map(({ text, icon }) => {
                 if (!icon) {
                   return (
-                    <Typography key={text} sx={{ m: "2.25rem 0 1rem 3rem" }}>
+                    <Typography key={text} sx={{ m: "1rem 0 1rem 3rem" }}>
                       {text}
                     </Typography>
                   );
@@ -122,12 +122,12 @@ const Sidebar = ({ user, drawerWidth, isSidebarOpen, setIsSidebarOpen, isNonMobi
 
                 return (
                   <ListItem key={text} disablePadding>
-                    <ListItemButton
+                    <ListItemButton 
                       onClick={() => {
                         navigate(`/${lcText}`);
                         setActive(lcText);
                       }}
-                      sx={{
+                      sx={{p:"3px",
                         backgroundColor:
                           active === lcText
                             ? theme.palette.secondary[300]
@@ -162,7 +162,7 @@ const Sidebar = ({ user, drawerWidth, isSidebarOpen, setIsSidebarOpen, isNonMobi
 
           <Box position="absolute" bottom="2rem">
             <Divider />
-            <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 3rem">
+            <FlexBetween textTransform="none" gap="1rem" m="1rem 2rem 0 3rem">
               <Box
                 component="img"
                 alt="profile"

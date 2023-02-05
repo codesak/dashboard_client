@@ -16,6 +16,7 @@ const store = configureStore({
   },
   middleware: (getDefault) => getDefault().concat(api.middleware),
 });
+setupListeners(store.dispatch);
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
