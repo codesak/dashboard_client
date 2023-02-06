@@ -10,6 +10,8 @@ import Products from "./container/Product";
 import Customers from "./container/Customers";
 import Transactions from "./container/Transactions";
 import Geography from "./container/Geography";
+import Overview from "./container/Overview";
+import Daily from "./container/Daily";
 
 function App() {
   const mode = useSelector((state) => state.global.mode);
@@ -27,6 +29,8 @@ function App() {
             <Route path="/customers" element={<Customers/>}/>
             <Route path="/transactions" element={<Transactions/>}/>
             <Route path="/geography" element={<Geography/>}/>
+            <Route path="/overview" element={<Overview/>}/>
+            <Route path="/daily" element={<Daily/>}/>
           </Route>
         </Routes>
       </ThemeProvider>
