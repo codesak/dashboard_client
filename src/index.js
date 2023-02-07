@@ -4,10 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { configureStore } from '@reduxjs/toolkit';
-import globalReducer from "./state/index";
+import globalReducer from "./store/index";
 import { Provider } from 'react-redux';
 import { setupListeners } from '@reduxjs/toolkit/dist/query';
-import {api} from './state/api'
+import {api} from './store/api'
 
 const store = configureStore({
   reducer:{

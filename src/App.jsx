@@ -12,6 +12,10 @@ import Transactions from "./container/Transactions";
 import Geography from "./container/Geography";
 import Overview from "./container/Overview";
 import Daily from "./container/Daily";
+import Monthly from "container/Monthly";
+import Breakdown from "container/Breakdown";
+import Admin from "container/Admin";
+import Performance from "./container/Performance";
 
 function App() {
   const mode = useSelector((state) => state.global.mode);
@@ -31,6 +35,10 @@ function App() {
             <Route path="/geography" element={<Geography/>}/>
             <Route path="/overview" element={<Overview/>}/>
             <Route path="/daily" element={<Daily/>}/>
+            <Route path="/monthly" element={<Monthly/>}/>
+            <Route path="/breakdown" element={<Breakdown/>}/>
+            <Route path="/admin" element={<Admin/>}/>
+            <Route path="/performance" element={<Performance/>}/>
           </Route>
         </Routes>
       </ThemeProvider>

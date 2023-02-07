@@ -4,7 +4,7 @@ import { SettingsOutlined, ChevronLeft, ChevronRightOutlined, HomeOutlined, Shop
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import FlexBetween from "./FlexBetween";
-import profileImage from '../asstes/profile.jpeg'
+import profileImage from '../assets/profile.jpeg'
 
 const navItems = [
     {
@@ -99,7 +99,7 @@ const Sidebar = ({ user, drawerWidth, isSidebarOpen, setIsSidebarOpen, isNonMobi
               <FlexBetween color={theme.palette.secondary.main}>
                 <Box display="flex" alignItems="center" gap="0.5rem">
                   <Typography variant="h4" fontWeight="bold">
-                    ECOMVISION
+                    BLACKBOX
                   </Typography>
                 </Box>
                 {!isNonMobile && (
