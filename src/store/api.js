@@ -1,9 +1,9 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const api = createApi({
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:4000" }),
+  baseQuery: fetchBaseQuery({ baseUrl: process.env.REACT_APP_BASE_URL }),
   reducerPath: "adminApi",
-  tagTypes: ["User","Performance","Dashboard", "Products","Geography", "Customers", "Transactions", "Sales"],
+  tagTypes: ["User","Performance","Dashboard", "Products","Geography", "Customers", "Transactions", "Sales", "Admins"],
   endpoints: (build) => ({
     getUser: build.query({
       query: (id) => `general/user/${id}`,
@@ -47,5 +47,6 @@ export const api = createApi({
     }),
   }),
 });
+console.log(process.env.REACT_APP_BASE_URL)
 
 export const {useGetAdminsQuery, useGetDashboardQuery, useGetUserPerformanceQuery,useGetSalesQuery, useGetGeographyQuery, useGetUserQuery, useGetProductsQuery, useGetCustomersQuery, useGetTransactionsQuery } = api;
