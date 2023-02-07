@@ -47,6 +47,5 @@ export const api = createApi({
     }),
   }),
 });
-console.log(process.env.REACT_APP_BASE_URL)
 
 export const {useGetAdminsQuery, useGetDashboardQuery, useGetUserPerformanceQuery,useGetSalesQuery, useGetGeographyQuery, useGetUserQuery, useGetProductsQuery, useGetCustomersQuery, useGetTransactionsQuery } = api;
